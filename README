@@ -1,0 +1,21 @@
+This python module provides file-based message queue.
+
+example of use:
+
+import filemq
+# new message queue in /var/spool/filemq
+mq = filemq.FileMQ('/var/spool/filemq')
+# put message to queue
+mq.put('hello')
+# get message
+m = mq.get()
+# now work with it
+# ...
+# commit if message successfully worked
+mq.commit(m)
+# or you may put message back to queue:
+# mq.rollback(m)
+# or remove from queue signalling that message processing
+# was unsuccessful
+# mq.discard(m)
+
