@@ -7,6 +7,6 @@ setup(name='python-filemq',
 	description='File based message queue',
 	author='Alexander Duryagin',
 	author_email='daa@vologda.ru',
-	url='',
+	url='http://github.com/daa/filemq',
 	py_modules=['filemq'])
 
